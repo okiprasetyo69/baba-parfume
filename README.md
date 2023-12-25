@@ -1,0 +1,1 @@
+1. Make sure user table seeder was execute to login page

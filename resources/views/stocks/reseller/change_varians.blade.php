@@ -1,5 +1,5 @@
 @extends('layout.home')
-@section('title', 'Repeat Order Perfume')
+@section('title', 'Tukar Aroma Parfume')
 @section('content')
 
     <!-- Begin Page Content -->
@@ -7,7 +7,7 @@
 
         <!-- Page Heading -->
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Repeat Order Parfume {{ Auth()->user()->name }}</h1>
+            <h1 class="h3 mb-0 text-gray-800">Tukar Aroma Parfume {{ Auth()->user()->name }}</h1>
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                     class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
         </div>
@@ -19,21 +19,21 @@
                 <!-- Project Card Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Daftar Repeat Order Parfume</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">Daftar Tukar Aroma</h6>
                     </div>
                     <div class="card-body">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                            Tambah Pesanan
+                            Tambah Penukaran
                         </button>
                         <div class="mt-4 table-responsive">
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
-                                        <th scope="col">Nama Aroma</th>
+                                        <th scope="col">Nama Aroma Ditukar</th>
+                                        <th scope="col">Nama Aroma Penukar</th>
                                         <th scope="col">Quantity</th>
-                                        <th scope="col">Tanggal Order</th>
                                         <th scope="col">Status</th>
                                         <th scope="col">Aksi</th>
                                     </tr>
@@ -49,12 +49,12 @@
             </div>
         </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <!-- Modal -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Tambah Order</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Tambah Tukar Aroma</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                         </button>
@@ -63,8 +63,12 @@
                         @csrf
                     <div class="modal-body">
                         <div class="col">
-                            <label> Nama Aroma</label>
-                            <input type="text" name="name" id="name" class="form-control" />
+                            <label> Nama Aroma Ditukar</label>
+                            <input type="text" name="item_id_in" id="name" class="form-control" />
+                        </div>
+                        <div class="col mt-2">
+                            <label> Nama Aroma Penukar</label>
+                            <input type="text" name="item_id_out" id="name" class="form-control" />
                         </div>
                         <div class="col mt-2">
                             <label> Quantity </label>

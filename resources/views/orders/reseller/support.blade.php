@@ -19,7 +19,7 @@
                 <!-- Project Card Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Daftar Repeat Order</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">Daftar Repeat Order Support</h6>
                     </div>
                     <div class="card-body">
                         <!-- Button trigger modal -->
@@ -63,7 +63,7 @@
                         @csrf
                     <div class="modal-body">
                         <div class="col">
-                            <label> Pilih nama item</label>
+                            <label> Nama Item</label>
                             <input type="text" name="name" id="name" class="form-control" />
                         </div>
                         <div class="col mt-2">

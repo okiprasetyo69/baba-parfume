@@ -135,9 +135,9 @@
                     </a>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
-                            <a class="collapse-item" href="#"> Parfume</a>
-                            <a class="collapse-item" href="#"> Pendukung</a>
-                            <a class="collapse-item" href="#"> Tukar Aroma</a>
+                            <a class="collapse-item" href="/reseller-stock-perfume"> Parfume</a>
+                            <a class="collapse-item" href="/reseller-stock-support"> Pendukung</a>
+                            <a class="collapse-item" href="/reseller-change-perfume"> Tukar Aroma</a>
                         </div>
                     </div>
                 </li>
@@ -155,8 +155,8 @@
                     <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                         data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
-                            <a class="collapse-item" href="utilities-color.html"> Parfume</a>
-                            <a class="collapse-item" href="utilities-border.html"> Pendukung</a>
+                            <a class="collapse-item" href="/reseller-transaction-perfume"> Transaksi</a>
+                            <!-- <a class="collapse-item" href="utilities-border.html"> Pendukung</a> -->
                         </div>
                     </div>
                 </li>
